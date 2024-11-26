@@ -1,0 +1,299 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: 
+    #282C2F;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:flex-start;
+   margin: 0;
+   overflow: hidden;
+}
+*{
+    font-family: 'Product Sans', sans-serif;
+}
+h1{
+    position: absolute;
+    left: 10px;
+    font-weight: 500;
+  top: 50px;
+  font-size: 50px;
+  color: white;
+}
+
+i{
+    color: white;
+    
+    
+}
+p{
+    color: white;
+    margin-left: 10px;
+}
+#results{
+   position: absolute;
+   top:135px;
+   left: 195px;
+    color: gray;
+    font-size: small;
+}
+.title{
+  padding-bottom: 100px;
+  padding-right: 100px;
+}
+#Search {
+    display: flex;
+    flex-direction: row; /* Align children horizontally */
+    align-items: center; /* Vertically center children */
+    gap: 10px; /* Add space between children */
+    width: 70vw;
+    height: 6vh;
+    border: 1px solid white;
+    position: absolute;
+    top: 85px;
+    left: 200px;
+    max-width: 500px;
+}
+
+#SearchBar {
+    flex: .9; /* Takes up remaining space */
+    height: 100%; /* Matches parent container's height */
+    border: 1px solid white;
+    padding: 0 10px; /* Add padding inside the input */
+    background: none;
+    color:white;
+}
+
+#sButton {
+     flex: .2; /* Fixed size for the button */
+    height: 100%; /* Matches parent container's height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers icon inside button */
+    border: 1px solid white;
+    cursor: pointer; /* Pointer cursor for button */
+
+}
+
+#sButton:hover {
+    background-color: rgba(128, 128, 128, 0.24);
+    text-decoration: none;
+}
+
+nav{
+    width: 100vw;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+#navText{
+    align-self: center;
+    justify-self: left;
+}
+
+#navButtons > button{
+
+    color: white;
+    font-size: x-large;
+}
+#navButtons{
+    display: flex;
+    width: 50vw;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    font-size: x-large;  
+}
+section{
+    width: 70vw;
+    height: 20vh;
+    margin-left: 100px;
+    max-width: 600px;
+    
+}
+
+::placeholder{
+    color: white;
+    font-size: medium;
+    
+}
+ul{
+    color:white;
+    line-height: 2;
+}
+#ProjectsSection > p{
+    color:white;
+    line-height: 1;
+    font-size: large;
+    font-weight: 800;
+}
+#About-Me{
+    margin-top: 200px;
+    
+}
+section > p{
+    line-height: 2;
+}
+#aboutMe{
+    line-height: 2;
+}
+button{
+    background: none;
+    font-size: x-large;
+
+    
+}
+section > button{
+    color: #4285F4;
+    border: none;
+
+}
+#contact > p{
+    line-height: 1;
+}
+section > button:hover{
+    text-decoration: underline;
+    
+}
+#navButtons > button:hover{
+    background-color: rgba(0, 38, 255, 0.31);
+}
+section > p{
+    font-size: small;
+}
+figcaption{
+    float: left;
+}
+#display{
+    display: none;
+    height: 95vh;
+    width: 30vw;
+    border: 1px solid white;
+    position: absolute;
+    left: 65%;
+    top: 5%;
+}
+.slide>img{
+    height: 95vh;
+    width: 30vw;
+}
+.slide{
+    display: none;
+}
+
+dialog{
+    background-color: #282C2F;
+    width: fit-content;
+    max-width: 75vw;
+    height: 80vh;
+    &[open]{
+        animation-name: openDialog;
+        animation-duration: .3s;
+        animation-timing-function: linear;
+        
+    }
+}
+#pContent{
+    display: flex;
+    justify-content: space-between;
+}
+figcaption{
+    color: white;
+    text-align: center;
+}
+figure> p{
+    float: left;
+}
+.covers{
+    float: left;
+    width: 300px;
+    height: 400px;
+}
+#cAb{
+    background: none;
+    float: right;
+}
+#picP{
+    float: left;
+    background-color: gray;
+    width: 250px;
+    height: 250px;
+}
+#OBCvid > p{
+    float: right;
+}
+#aboutMeCover{
+
+background-color: transparent;
+margin-top: -10px;
+filter: blur(3px);
+}
+video:hover{
+    width: 400px;
+    height: 500px;
+}
+
+figure > p{
+    text-align: center;
+}
+@keyframes openDialog {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    } 
+    100%{
+        transform: translateY();
+        opacity: 1;
+    }
+}
+@media (min-width: 1400px) {
+    #display{
+        display: block;
+    }
+}
+@media (max-width: 500px){
+    *{
+        font-size: small;
+    }
+    #navText{
+        display: none;
+    }
+    #navButtons{
+        justify-content:space-around;
+        width: 100vw;
+        
+    }
+    #navButtons>button{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 40px;
+        margin-left: 25px;
+        margin-top: 45px;
+    }
+    section>p{
+        font-size: 10px;
+    }
+    section{
+        height: 200vh;
+        margin-left: 50px;
+    }
+    section>button{
+        font-size: 20px;
+    }
+    #SearchBar{
+        display: none;
+    }
+    #Search{
+        border: none;
+    }
+    #picP{
+        float: left;
+        width: 100px;
+        height: 100px;
+    }
+}

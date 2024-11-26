@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Leo Twaha's Portfolio</title>
+</head>
+<body>
+    <h1>Google</h1>
+    <div id="Search">
+        <input id="SearchBar" type="text" placeholder="Leo Twaha's Portfolio" disabled>
+        <button id="sButton">
+            <i class="fa fa-search"></i>
+        </button>
+        
+    </div>
+    <p id="results">Showing 3 results</p>
+   
+    <nav>
+        <p id="navText">Leo Twaha's Portfolio</p>
+        <div id="navButtons">
+          <button id="aBtn">About</button>
+        <button id="pBtn">Projects</button>
+        <button id="cBtn">Contact</button>   
+        </div>
+    </nav>
+    <section id="About-Me"><button id="aB">About Me</button>
+        <p>My Name is Leo Twaha. I'm an inspiring Software 
+        Engineer. I'm currently attending at Dakota County 
+        Techninal College for their Software Development course.
+        I plan to transfer to the University of Minnesota and earn ...
+       <dialog id="aboutMe">
+        <div id="picP"><p>Professional looking picture coming soon.</p></div>
+        <p>My Name is Leo Twaha. I'm an inspring Software 
+            Engineer. I'm currently attending at Dakota County 
+            Techninal College for their Software Development course. 
+            I plan to transfer to the University of Minnesota and earn
+            a Bachelor of Arts in Computer science. <br> My Skills include HTML\CSS\JS Java Jquery Bootstrap Node.JS</p>
+            <button id="cAb">Close</button>
+       </dialog>
+    </section>
+    <section id="ProjectsSection"><button id="P">Projects</button>
+        <p>Quad Solver</p>
+        <p>Snake [Remake]</p>
+        <p>One Button Calculator</p>
+        </ul>
+        <dialog id="projects">
+            <div id="pContent">
+            <figure>
+               <a href="https://quadsolver.onrender.com" target="_blank"><video id="QSvid" poster="./QuadSolver.png" class="covers" src="./QuadSolverPreview.mp4"
+                type="video/mp4" muted class="vid" loop></a> 
+                <p>QuadSolver is a web app that can solve <br> quadratic equations and factor them. It <br> was made with HTML\CSS\JS Node.JS <br> and NPM libraries Click The Image to Try It</p>
+         </video>
+                
+            </figure>
+            <figure>
+                <a href="https://leotwaha.github.io/Snake/" target="_blank"><video id="Svid" poster="./SnakePic.png" class="covers" src="./SnakePreview.mp4"
+                type="video/mp4" muted class="vid" loop></a>
+                <p>Remake of the popular snake game. Made with HTML\CSS\JS Click The Image to Try It</p>
+         </video>
+            </figure>
+            <figure>
+                <a href="https://leotwaha.github.io/OneButtonCalculator/" target="_blank"><video id="OBCvid" class="covers" poster="./OneBtnCalc.png" src="./OneBtnCalcPreview.mp4"
+                type="video/mp4" muted class="vid" loop></a>
+                <p>The first Calculator in the world to only require one button to operate. Made with HTML\CSS\JS Click The Image to Try It</p>
+         </video>
+            </figure>
+        </div>
+                <button id="cProjects">Close</button>    
+        </dialog>
+    </section>
+    <section id="contact"><button id="C">Contact</button>
+        <p>Email: ....</p>
+        <p>Phone: ...</p>
+        <p>LinkedIn: ...</p>
+        <dialog id="contactD">
+           <p> <i class="fa fa-envelope" style="font-size:36px"></i> Email: <a href="mailto:leotwaha590@gmail.com">leotwaha590@gmail.com</a></p>
+        <p> <i class="fa fa-phone" style="font-size:36px"></i> Phone: 612-987-4240</p>
+        <p><i class="fa fa-linkedin-square" style="font-size:36px"></i> LinkedIn</p>
+        <button id="clsContact">Close</button> 
+        </dialog>
+    </section>
+    <div id="display" >
+        <div class="slide">
+            <img src="./QuadSolver.png">
+        </div>
+        <div class="slide">
+          <img src="./SnakePic.png">
+        </div>
+        <div class="slide">
+          <img src="./OneBtnCalc.png">  
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

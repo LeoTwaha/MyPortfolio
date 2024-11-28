@@ -141,6 +141,10 @@ section > p{
 #aboutMe{
     line-height: 2;
 }
+#aboutMeT{
+    line-height: 2;
+    font-size: xx-large;
+}
 button{
     background: none;
     font-size: x-large;
@@ -220,7 +224,7 @@ figure> p{
 #picP{
     float: left;
     background-color: gray;
-    width: 250px;
+    width: 190px;
     height: 250px;
 }
 #OBCvid > p{
@@ -250,7 +254,7 @@ figure > p{
         opacity: 1;
     }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1100px) {
     #display{
         display: block;
     }
@@ -293,7 +297,11 @@ figure > p{
     }
     #picP{
         float: left;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 200px;
+    }
+    #aboutMeT{
+        line-height: 2;
+        font-size: medium;
     }
 }
